@@ -87,7 +87,7 @@ export default function LastInfo() {
             </tr>
           </thead>
           <tbody>
-            {lostInfo && lostInfo.length > 0 && (
+            {lostInfo && lostInfo.length !== 0 && (
               <tr key={lostInfo.vehicle_id}>
                 <td className="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
                   {lostInfo.vehicle_id}
